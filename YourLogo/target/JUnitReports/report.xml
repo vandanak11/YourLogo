@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="4" time="80.413">
+    <testcase classname="Register to Your Logo App" name="Create Account" time="19.026">
+        <system-out><![CDATA[Given I open YourLogo Web site..............................................passed
+And I click on Sign in......................................................passed
+When I enter email address "abc" to register................................passed
+And I click on Create an account button.....................................passed
+Then I see the message "Create an account" on Create Account page...........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Logout and Login to Your Logo Web site" name="Logout and Login" time="22.063">
+        <system-out><![CDATA[Given I open YourLogo Web site..............................................passed
+And I click on Sign in button...............................................passed
+And I enter Email address "usertest1@email.com" and Password "test1" on home page.passed
+And I click on SignIn button on Login form..................................passed
+And I am logged in to YourLogo web site and the message "Welcome to your account" is displayed on the page.passed
+When I click on Logout......................................................passed
+And I enter Email address "usertest1@email.com" and Password "test1" on home page.passed
+And I click on SignIn button on Login form..................................passed
+Then I am logged back to the web site and the message "Welcome to your account" is displayed on the page.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Register to Your Logo App" name="Register to Your Logo" time="21.043">
+        <system-out><![CDATA[Given I open YourLogo Web site..............................................passed
+And I click on Sign in......................................................passed
+And I enter email address "abc" to register.................................passed
+And I click on Create an account button.....................................passed
+When I enter Title as "Mr"..................................................passed
+When I enter valid data on page.............................................passed
+And I click on register button..............................................passed
+Then I am registered to YourLogo web site and the message "Welcome to your account" is displayed on the page.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Logout and Login to Your Logo Web site" name="Logout and Login" time="17.547">
+        <system-out><![CDATA[Given I open YourLogo Web site..............................................passed
+And I click on Sign in button...............................................passed
+And I enter Email address "usertest1@email.com" and Password "test1" on home page.passed
+When I click on SignIn button on Login form.................................passed
+Then I am logged in to YourLogo web site and correct name "user test" is displayed on the page.passed
+]]></system-out>
+    </testcase>
+</testsuite>
